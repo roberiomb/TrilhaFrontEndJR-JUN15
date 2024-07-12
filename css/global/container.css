@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor-red);
+}
+
+
+.container-bg {
+  background: var(--cor-preto);
+  margin: auto;
+  margin-top: 10px;
+  width: 99vw;
+  height: 98vh;
+  border-radius: 15px;
+  }
+
+  .container {
+    box-sizing: border-box;
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }

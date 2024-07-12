@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 20px;
+
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  color: var(--cor-branco);
+
+}
+
+.header-menu li:hover {
+  transition: 0.4s ease-in-out;
+  color: var(--cor-red);
+}
+
+.botao {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid var(--cor-branco);
+  color: var(--cor-red);
+  }
+
+  .botao:hover {
+    transition: 0.4s ease-in-out;
+    color: var(--cor-branco)
+  }

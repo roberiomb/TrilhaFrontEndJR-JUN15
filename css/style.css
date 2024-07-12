@@ -1,15 +1,17 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  background: #e53939;
-}
+@import "./global/container.css";
+@import "./global/header.css";
+@import "./global/global.css";
 
-.container-bg {
-background: black;
-margin: auto;
-margin-top: 10px;
-width: 99vw;
-height: 98vh;
-}
+
+ /* TIPOGRAFIA */
+
+@import "./utilitades/tipografia.css";
+
+ /* CORES */
+
+@import "./utilitades/cores.css";
+
+
+
 
 
