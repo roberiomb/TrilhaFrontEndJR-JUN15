@@ -1,0 +1,15 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #e53939;
+}
+
+.container-bg {
+background: black;
+margin: auto;
+margin-top: 10px;
+width: 99vw;
+height: 98vh;
+}
+
+
