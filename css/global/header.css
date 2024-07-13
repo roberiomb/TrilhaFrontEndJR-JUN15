@@ -3,16 +3,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 30px;
 
 }
 
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
   align-items: center;
   color: var(--cor-branco);
+  padding-top: 5px;
 
 }
 
@@ -31,5 +32,27 @@
 
   .botao:hover {
     transition: 0.4s ease-in-out;
-    color: var(--cor-branco)
+    color: var(--cor-branco);
+    border: 2px solid var(--cor-red);
+  }
+
+  @media (width <= 800px) {
+    img {
+      width: 100px;
+    }
+    .header-menu li {
+      font-size: 0.7rem;
+    }
+    .botao {
+      padding: 6px 15px;
+    }
+  }
+
+  @media (width <= 320px) {
+    .header-menu li {
+      margin-top: 15px;
+    }
+    .botao{
+      display: none;
+    }
   }

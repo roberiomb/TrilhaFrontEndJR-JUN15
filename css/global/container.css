@@ -9,8 +9,8 @@ body {
   background: var(--cor-preto);
   margin: auto;
   margin-top: 10px;
-  width: 99vw;
-  height: 98vh;
+  width: 97vw;
+  height: 1700px; /* mudar depois */
   border-radius: 15px;
   }
 
