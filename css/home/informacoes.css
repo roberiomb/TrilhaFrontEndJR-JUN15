@@ -1,0 +1,147 @@
+.informacoes-bg {
+  margin-top: 200px;
+}
+.motivacoes {
+  color: var(--cor-red);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 286.91px;
+  height: 100px;
+}
+
+/* Retângulos INICIO */
+
+.informações-retangulo-sobremim {
+  margin-left: 25vw;
+  width: 800px;
+  height: 520px;
+  background: url(../../img/retanguloSobreMim.svg);
+  background-repeat: no-repeat;
+  color: var(--cor-branco);
+  align-content: center;
+  position: absolute;
+}
+
+.informações-retangulo-motivacoes {
+  margin-left: 25vw;
+  width: 800px;
+  height: 520px;
+  background: url(../../img/retanguloMotivacoes.svg);
+  background-repeat: no-repeat;
+  color: var(--cor-branco);
+  align-content: center;
+  position: absolute;
+}
+
+.informações-retangulo-gostos-pessoais {
+  margin-left: 25vw;
+  width: 800px;
+  height: 520px;
+  background: url(../../img/retanguloGostoPessoais.svg);
+  background-repeat: no-repeat;
+  color: var(--cor-branco);
+  align-content: center;
+  position: absolute;
+}
+
+.informações-retangulo-formacao {
+  margin-left: 25vw;
+  width: 800px;
+  height: 520px;
+  background: url(../../img/retanguloFormacao.svg);
+  background-repeat: no-repeat;
+  color: var(--cor-branco);
+  align-content: center;
+  position: absolute;
+}
+
+/* Retângulo ANIMAÇOES */
+
+.informações-retangulo-sobremim {
+  transform: translateX(100vw);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.informações-retangulo-formacao {
+  transform: translateX(100vw);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.informações-retangulo-gostos-pessoais {
+  transform: translateX(100vw);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.informações-retangulo-motivacoes {
+  transform: translateX(100vw);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.active {
+  transform: translateX(0vw);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+/* Retângulo ANIMAÇOES FIM */
+
+.informacoes-container {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.informacoes1 {
+  margin-bottom: 60px;
+}
+
+.informacoes2 {
+  color: var(--cor-branco2);
+}
+
+
+/* Retângulos FIM */
+
+.informacoes-decoracao {
+  position: absolute;
+  margin-left: 42vw;
+  opacity: 0.2;
+  animation: linear infinite;
+}
+
+.setadireita {
+  position: absolute;
+  margin-left: 82vw;
+  margin-top: 18vh;
+  cursor: pointer;
+  opacity: 70%;
+}
+
+
+.setadireita:hover {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%)
+    hue-rotate(10deg) brightness(90%) contrast(90%);
+  opacity: 100%;
+}
+
+.informacoes-decoracao {
+  animation-name: slide;
+  animation-duration: 02s;
+}
+
+/* ANIMAÇÂO DO ELEMENTO DECORATIVO */
+@keyframes slide {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}

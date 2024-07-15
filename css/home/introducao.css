@@ -61,10 +61,17 @@ p {
   margin-left: 5px;
 }
 
+.introducao-icon a img {
+  width: 35px;
+}
+
+/* RESPONSIVO */
+
 @media (width <= 800px) {
   .introducao-bg {
     margin-top: 50px;
     height: 240px;
+    width: 94vw;
   }
   .introducao {
     display: grid;
@@ -74,20 +81,19 @@ p {
     display: none;
   }
   .introducao-nome {
-  
     font-size: 1.5rem;
-    margin-left: 150px;
+    margin-left: 125px;
   }
 
   .introducao-p {
-    margin-left: 150px;
+    margin-left: 125px;
     font-size: 0.8rem;
   }
 
   .fotopessoal {
     margin-top: 120px;
     margin-left: 5vw;
-    width: 100px;
+    width: 90px;
     box-shadow: 2px 5px 5px 2px;
     border-radius: 10px;
   }
@@ -98,6 +104,5 @@ p {
 
   .introducao-icon a img {
     max-width: 40px;
-
   }
 }
