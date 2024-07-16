@@ -1,15 +1,5 @@
 .informacoes-bg {
   margin-top: 200px;
-
-}
-
-.motivacoes {
-  color: var(--cor-red);
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 286.91px;
-  height: 100px;
 }
 
 /* Retângulos INICIO */
@@ -44,7 +34,6 @@
   background-repeat: no-repeat;
 }
 
-
 .informacoes-container {
   width: 80%;
   height: 80%;
@@ -61,24 +50,28 @@
   color: var(--cor-branco2);
   line-height: 30px;
 }
-
 /* Retângulos FIM */
 .informacoes-decoracao {
   position: absolute;
-  margin-left: 42vw;
+  margin-left: 82vw;
   opacity: 0.3;
   animation: linear infinite;
 }
 
-.setadireita, .setaesquerda {
+.informacoes-decoracao {
+  animation-name: slide;
+  animation-duration: 02s;
+}
+
+.setadireita,
+.setaesquerda {
   position: absolute;
-  transform: translateY(-50%);
   cursor: pointer;
-  opacity: 70%;
+  opacity: 40%;
 }
 
 .setadireita {
-margin-top: 18vh;
+  margin-top: 18vh;
   right: 22vw;
 }
 
@@ -87,7 +80,8 @@ margin-top: 18vh;
   left: 15vw;
 }
 
-.setadireita:hover, .setaesquerda:hover {
+.setadireita:hover,
+.setaesquerda:hover {
   filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%)
     hue-rotate(10deg) brightness(90%) contrast(90%);
   opacity: 100%;
@@ -99,7 +93,6 @@ margin-top: 18vh;
   margin-top: 55vh;
   position: absolute;
   margin-left: 42vw;
-
 }
 
 .slide-indicators input {
@@ -107,7 +100,6 @@ margin-top: 18vh;
 }
 
 .slide-indicators label {
-
   width: 15px;
   height: 15px;
   background: var(--cor-branco2);
@@ -120,13 +112,8 @@ margin-top: 18vh;
   background: var(--cor-red);
 }
 
-
-.informacoes-decoracao {
-  animation-name: slide;
-  animation-duration: 02s;
-}
-
 /* ANIMAÇÂO DO ELEMENTO DECORATIVO */
+
 @keyframes slide {
   from {
     opacity: 0.3;
@@ -137,3 +124,53 @@ margin-top: 18vh;
 }
 /* ANIMAÇÂO DO ELEMENTO DECORATIVO */
 
+@media (width <= 900px) {
+  .informações-retangulo-sobremim,
+  .informações-retangulo-motivacoes,
+  .informações-retangulo-gostos-pessoais,
+  .informações-retangulo-formacao {
+    background: none;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .informacoes-container {
+    width: auto;
+    height: 400px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .informacoes1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .informacoes2 {
+    font-size: 0.8rem;
+    line-height: 5px;
+    color: var(--cor-branco3);
+  }
+
+  .informacoes-decoracao {
+    width: 25px;
+    position: 0px;
+  }
+  .informacoes-bg {
+    margin-top: 5px;
+  }
+  .setaesquerda,
+  .setadireita {
+    width: 35px;
+  }
+  .setaesquerda {
+    margin-top: 18vh;
+    left: 8vw;
+  }
+  .setadireita {
+    margin-top: 18vh;
+    right: 8vw;
+  }
+}

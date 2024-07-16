@@ -22,14 +22,14 @@ p {
 }
 
 .introducao-nome {
-  margin-left: 9vw;
+  margin-left: 13vw;
   font-size: 2.8rem;
   color: var(--cor-branco);
   font-weight: 800;
 }
 
 .introducao-p {
-  margin-left: 9vw;
+  margin-left: 13vw;
   font-size: 1.5rem;
   color: hsl(0, 0%, 45%);
   text-transform: uppercase;
@@ -54,7 +54,7 @@ p {
 
 .introducao-icon {
   margin-top: 15px;
-  margin-left: 9vw;
+  margin-left: 13vw;
 }
 
 .introducao-icon a:nth-child(2) {
