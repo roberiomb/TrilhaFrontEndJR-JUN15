@@ -1,16 +1,34 @@
-let prevButton = document.getElementById("prev");
-let nextButton = document.getElementById("next");
-let retangulos = document.querySelector(".retangulos");
-let items = retangulos.querySelectorAll("#items");
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.retangulos > div');
+  const indicators = document.querySelectorAll('.slide-indicators input');
+  let currentSlide = 0;
 
-let active = 0;
-let firstPosition = 0;
-let lastPosition = items.length - 1;
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    })
+    indicators.forEach((indicator, i) => {
+      indicator.checked = i === index
+    })
+  }
 
-nextButton.onclick = () => {
-  let itemOld = retangulos.querySelector(".active");
-  itemOld.classList.remove('active');
+  document.getElementById('next').addEventListener('click', function () {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide)
+  })
 
-  active = active + 1 > lastPosition ? 0 : active + 1;
-  items[active].classList.add('active');
-};
+  document.getElementById('prev').addEventListener('click', function () {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length
+    showSlide(currentSlide)
+  });
+
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('change', function () {
+      currentSlide = index
+      showSlide(currentSlide)
+    })
+  })
+
+  // Mostra o slide inicial
+  showSlide(currentSlide);
+})

@@ -7,7 +7,6 @@
   <title>Desafio Codigo Certo</title>
   <meta name="description" content="Page criada para o desafio do Codigo Certo.">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- Lembrar de colocar o FIVEICON -->
 </head>
 
 <body>
@@ -15,7 +14,6 @@
     <header>
       <div class="header container">
         <img src="./img/logo.svg" alt="Desafio codigo certo">
-
         <nav aria-label="primaria">
           <ul class="header-menu font-2-s">
             <li><a href="#">Informações</a></li>
@@ -28,89 +26,69 @@
 
     <main class="">
       <div class="introducao">
-
         <div class="introducao-bg">
-
           <h1 class="introducao-nome">ROBÉRIO <span> JÚNIOR </span></h1>
           <p class="introducao-p font-2-l"> Desenvolvedor Front End </p>
-
         </div>
-
         <img class="decorador" src="./img/poligonodecorador.svg" alt="decorador">
-
         <img class="fotopessoal" src="./img/fotopessoal.png" alt="Fotopessoal">
-
       </div>
-
       <div class="introducao-icon">
         <a href="https://github.com/roberiomb" target="_blank"><img src="./img/logogit.png" alt="Github"></a>
-
         <a href="https://www.linkedin.com/in/rob%C3%A9rio-j%C3%BAnior-86772b312/" target="_blank"><img src="./img/logolinkedin.svg" alt="linkedin"></a>
       </div>
-
     </main>
 
     <article class="informacoes-bg">
-
       <div class="motivacoes font-1-xl">
-
         <img class="informacoes-decoracao" src="./img/bolinhasopacity100.svg" alt="setaesquerda">
-
-
       </div>
-     
+
+      <img id="prev" class="setaesquerda" src="./img/iconsetaesquerda.svg" alt="setaesquerda">
       <img id="next" class="setadireita" src="./img/iconsetadireita.svg" alt="setadireita">
 
       <div class="retangulos">
-
-        <div id="items" class="informações-retangulo-sobremim active">
-
+        <div id="slide-1" class="informações-retangulo-sobremim">
           <div class="informacoes-container">
             <h2 class="informacoes1 font-1-xxl">Sobre Mim</h2>
             <span class="informacoes2 font-2-l">Me chamo <strong> José Robério de Moura Barboza Júnior </strong>, sou casado, tenho 35 anos e uma filha de 2 anos. Atualmente estou em processo de transição de carreira e me dedicando 100% aos estudos da programação para alcançar meu objetivo de ser um desenvolvedor front-end. Felizmente, a experiência que acumulei atuando em outras áreas, tem me ajudado muito neste processo; a exemplo dos conhecimentos prévios em UI design.</span>
           </div>
-
         </div>
 
-        <div id="items"  class="informações-retangulo-motivacoes">
-
+        <div id="slide-2" class="informações-retangulo-motivacoes">
           <div class="informacoes-container">
             <h2 class="informacoes1 font-1-xxl">Motivações</h2>
             <span class="informacoes2 font-2-l">Amo adquirir novos conhecimentos e pôr em prática meus projetos. A oportunidade de adquirir experiência profissional enquanto aplico os conhecimentos que já adquiri até aqui, é portanto, um grande ganho para mim. Tenho certeza de que poderei contribuir e aprender muito através desta comunidade.</span>
           </div>
-
-
         </div>
 
-        <div id="items" class="informações-retangulo-gostos-pessoais">
-
+        <div id="slide-3" class="informações-retangulo-gostos-pessoais">
           <div class="informacoes-container">
             <h2 class="informacoes1 font-1-xxl">Gostos Pessoais</h2>
             <span class="informacoes2 font-2-l">Fotografar a natureza é uma de minhas paixões. Há 9 anos adquiri minha primeira câmera profissional e descobri o quanto fotografar desperta minha criatividade ao me conectar com a natureza; além de me impulsionar a aprender novas técnicas e ferramentas para aprimoramento das minhas fotos. Gosto também de tocar violão, costumo dedicar 1 hora por semana para tocar com minha filha de 2 anos que ama cantar.</span>
           </div>
-
         </div>
 
-        <div id="items"  class="informações-retangulo-formacao">
-
+        <div id="slide-4" class="informações-retangulo-formacao">
           <div class="informacoes-container">
             <h2 class="informacoes1 font-1-xxl">Formação</h2>
             <span class="informacoes2 font-2-l"> Como alguém apaixonado por tecnologia , estou entusiasmado com a minha transição de carreira para programção. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, dedicando-me intensamente aos estudos e a projetos pessoais nessa área fascinante.</span>
           </div>
-
         </div>
       </div>
 
+      <div class="slide-indicators">
+        <input type="radio" name="slide" id="indicator-1" checked>
+        <label for="indicator-1"></label>
+        <input type="radio" name="slide" id="indicator-2">
+        <label for="indicator-2"></label>
+        <input type="radio" name="slide" id="indicator-3">
+        <label for="indicator-3"></label>
+        <input type="radio" name="slide" id="indicator-4">
+        <label for="indicator-4"></label>
+      </div>
     </article>
-
-
   </div>
-
-
-
-
   <script src="script.js"></script>
-
 </body>
-
 </html>
