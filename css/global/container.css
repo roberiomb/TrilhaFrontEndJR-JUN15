@@ -9,8 +9,9 @@ body {
   background: var(--cor-preto);
   margin: auto;
   margin-top: 18px;
+  margin-bottom: 25px;
   width: 97vw;
-  height: 1700px; /* mudar depois */
+  height: auto; /* mudar depois */
   border-radius: 15px;
   }
 
@@ -21,4 +22,5 @@ body {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+    
   }

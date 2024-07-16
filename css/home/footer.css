@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  margin-left: auto;
+  margin-left: auto;
+  text-align: center;
+  color: var(--cor-branco3);
+}
+
+.footer span {
+  color: var(--cor-red);
+}
+
+.footer p {
+  margin-top: 15px;
+}

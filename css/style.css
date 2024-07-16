@@ -16,10 +16,20 @@
 @import "./home/introducao.css";
 
 
- /* HABILIDADES */
+ /* INFOMAÇÕES */
 
 @import "./home/informacoes.css";
  
+
+ /* HABILIDADES */
+
+@import "./home/habilidades.css";
+
+
+ /* FOOTER */
+
+@import "./home/footer.css";
+
 
 
 

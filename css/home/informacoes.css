@@ -1,37 +1,53 @@
 .informacoes-bg {
   margin-top: 200px;
+  height: 400px;
 }
 
 /* Retângulos INICIO */
+
+.retangulos {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  height: auto;
+}
+
 .informações-retangulo-sobremim,
 .informações-retangulo-motivacoes,
 .informações-retangulo-gostos-pessoais,
 .informações-retangulo-formacao {
-  margin-left: 25vw;
-  width: 800px;
-  height: 520px;
+  max-width: 40vw;
+  height: auto;
   background-repeat: no-repeat;
   color: var(--cor-branco);
-  align-content: center;
   position: absolute;
+  padding-bottom: 30px;
+  border-radius: 150px;
+  min-width: 300px;
+  box-shadow: inset 1px 1px 8px  var(--cor-branco2);
   display: none;
 }
 
 .informações-retangulo-sobremim {
-  background: url(../../img/retanguloSobreMim.svg);
+  background: var(--cor-red);
   background-repeat: no-repeat;
+
 }
+
 .informações-retangulo-motivacoes {
-  background: url(../../img/retanguloMotivacoes.svg);
+  background: var(--cor-red);
   background-repeat: no-repeat;
+
 }
 .informações-retangulo-gostos-pessoais {
-  background: url(../../img/retanguloGostoPessoais.svg);
+  background: var(--cor-red);
   background-repeat: no-repeat;
+
 }
 .informações-retangulo-formacao {
-  background: url(../../img/retanguloFormacao.svg);
+  background: var(--cor-red);
   background-repeat: no-repeat;
+
 }
 
 .informacoes-container {
@@ -43,7 +59,8 @@
 }
 
 .informacoes1 {
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .informacoes2 {
@@ -89,10 +106,9 @@
 
 .slide-indicators {
   display: flex;
-  justify-content: center;
-  margin-top: 55vh;
+  margin-top: 60vh;
   position: absolute;
-  margin-left: 42vw;
+  margin-left: 46vw;
 }
 
 .slide-indicators input {
@@ -102,7 +118,7 @@
 .slide-indicators label {
   width: 15px;
   height: 15px;
-  background: var(--cor-branco2);
+  background: var(--cor-branco3);
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
@@ -124,20 +140,27 @@
 }
 /* ANIMAÇÂO DO ELEMENTO DECORATIVO */
 
-@media (width <= 900px) {
+@media (width <= 1100px) {
   .informações-retangulo-sobremim,
   .informações-retangulo-motivacoes,
   .informações-retangulo-gostos-pessoais,
   .informações-retangulo-formacao {
     background: none;
-    width: auto;
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 50px;
+    margin-right: auto;
+    box-shadow: none;
+    min-width: 100%;
+  }
+
+  .retangulos {
+
+    margin-left: 5px;
+    height: auto;
   }
 
   .informacoes-container {
-    width: auto;
-    height: 400px;
+    width: 50vw;
+  
     margin: 0 auto;
     align-items: center;
     text-align: center;
@@ -156,7 +179,7 @@
 
   .informacoes-decoracao {
     width: 25px;
-    position: 0px;
+  
   }
   .informacoes-bg {
     margin-top: 5px;
@@ -173,4 +196,14 @@
     margin-top: 18vh;
     right: 8vw;
   }
+  .slide-indicators {
+    margin-top: 36vh;
+  }
+  .slide-indicators label {
+    width: 5px;
+    height: 5px;
+  }
+
+
+
 }
