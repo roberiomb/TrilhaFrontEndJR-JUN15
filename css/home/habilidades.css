@@ -37,6 +37,8 @@
   grid-template-columns: 2fr 1fr;
   color: #ffffff;
   text-align: start;
+
+
 }
 
 .habilidades-informacoes h2 {
@@ -46,12 +48,14 @@
 }
 
 .habilidades-informacoes h3 {
+
   color: var(--cor-red);
   padding-top: 20px;
   text-transform: uppercase;
 }
 
 .habilidades-ferramentas {
+  margin-left: 100px;
   grid-column: 1;
 }
 
