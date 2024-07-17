@@ -75,8 +75,8 @@
   margin-left: 14vw;
 }
 
-.setadireita:hover,
-.setaesquerda:hover {
+.setadireita:active,
+.setaesquerda:active {
   filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%)
     hue-rotate(10deg) brightness(90%) contrast(90%);
   opacity: 100%;

@@ -42,20 +42,19 @@
 }
 
 .habilidades-informacoes h2 {
+ 
   padding-top: 100px;
   color: var(--cor-red);
   text-transform: uppercase;
 }
 
 .habilidades-informacoes h3 {
-
   color: var(--cor-red);
   padding-top: 20px;
   text-transform: uppercase;
 }
 
 .habilidades-ferramentas {
-  margin-left: 100px;
   grid-column: 1;
 }
 
