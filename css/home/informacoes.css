@@ -1,53 +1,31 @@
 .informacoes-bg {
-  margin-top: 200px;
-  height: 400px;
+  margin-top: 250px;
+  height: 800px;
 }
 
 /* Retângulos INICIO */
 
 .retangulos {
+  margin-top: 160px;
   margin-left: auto;
   margin-right: auto;
-  width: 40vw;
-  height: auto;
+  width: 500px;
+  height: 500px;
 }
 
 .informações-retangulo-sobremim,
 .informações-retangulo-motivacoes,
 .informações-retangulo-gostos-pessoais,
 .informações-retangulo-formacao {
-  max-width: 40vw;
+  max-width: 500px;
   height: auto;
-  background-repeat: no-repeat;
   color: var(--cor-branco);
   position: absolute;
   padding-bottom: 30px;
-  border-radius: 150px;
   min-width: 300px;
-  box-shadow: inset 1px 1px 8px  var(--cor-branco2);
   display: none;
-}
-
-.informações-retangulo-sobremim {
-  background: var(--cor-red);
-  background-repeat: no-repeat;
-
-}
-
-.informações-retangulo-motivacoes {
-  background: var(--cor-red);
-  background-repeat: no-repeat;
-
-}
-.informações-retangulo-gostos-pessoais {
-  background: var(--cor-red);
-  background-repeat: no-repeat;
-
-}
-.informações-retangulo-formacao {
-  background: var(--cor-red);
-  background-repeat: no-repeat;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .informacoes-container {
@@ -60,7 +38,7 @@
 
 .informacoes1 {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .informacoes2 {
@@ -70,7 +48,7 @@
 /* Retângulos FIM */
 .informacoes-decoracao {
   position: absolute;
-  margin-left: 82vw;
+  margin-left: 88vw;
   opacity: 0.3;
   animation: linear infinite;
 }
@@ -89,12 +67,12 @@
 
 .setadireita {
   margin-top: 18vh;
-  right: 22vw;
+  margin-left: 80vw;
 }
 
 .setaesquerda {
   margin-top: 18vh;
-  left: 15vw;
+  margin-left: 14vw;
 }
 
 .setadireita:hover,
@@ -108,7 +86,7 @@
   display: flex;
   margin-top: 60vh;
   position: absolute;
-  margin-left: 46vw;
+  margin-left: 47vw;
 }
 
 .slide-indicators input {
@@ -120,8 +98,11 @@
   height: 15px;
   background: var(--cor-branco3);
   border-radius: 50%;
-  margin: 0 5px;
   cursor: pointer;
+}
+
+.slide-indicators label:nth-child(n + 2) {
+  margin-right: 10px;
 }
 
 .slide-indicators input:checked + label {
@@ -145,10 +126,10 @@
   .informações-retangulo-motivacoes,
   .informações-retangulo-gostos-pessoais,
   .informações-retangulo-formacao {
+    margin-top: 40px;
     background: none;
     max-width: 50px;
     margin-right: auto;
-    box-shadow: none;
     min-width: 100%;
   }
 
@@ -158,9 +139,12 @@
     height: auto;
   }
 
+  .informacoes-bg {
+    height: 600px;
+  }
+
   .informacoes-container {
     width: 50vw;
-  
     margin: 0 auto;
     align-items: center;
     text-align: center;
@@ -179,31 +163,48 @@
 
   .informacoes-decoracao {
     width: 25px;
-  
   }
   .informacoes-bg {
     margin-top: 5px;
   }
-  .setaesquerda,
+
   .setadireita {
     width: 35px;
+    z-index: 1;
+    margin-left: 83vw;
   }
+
   .setaesquerda {
-    margin-top: 18vh;
-    left: 8vw;
+    width: 35px;
+    z-index: 1;
+    margin-left: 5vw;
   }
-  .setadireita {
-    margin-top: 18vh;
-    right: 8vw;
-  }
+
   .slide-indicators {
-    margin-top: 36vh;
+    margin-top: 35vh;
   }
   .slide-indicators label {
     width: 5px;
     height: 5px;
   }
+}
+
+@media (width <= 500px) {
+  .slide-indicators {
+    margin-top: 50vh;
+    margin-left: 43vw;
+  }
+}
 
 
 
+  @media (width <= 380px) {
+    .slide-indicators {
+      margin-top: 65vh;
+    }
+    @media (width <= 250px) {
+      .slide-indicators {
+        margin-top: 60vh;
+      }
+}
 }

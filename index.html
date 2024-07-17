@@ -13,11 +13,11 @@
   <div class="container-bg">
     <header>
       <div class="header container">
-        <img src="./img/logo.svg" alt="Desafio codigo certo">
+        <img class="logocodigocerto" src="./img/logocodigocerto.svg" alt="Desafio codigo certo">
         <nav aria-label="primaria">
           <ul class="header-menu font-1-m">
-            <li><a href="#">Informações</a></li>
-            <li><a href="#">Habilidades</a></li>
+            <li><a href="#informacoes">Informações</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a class="botao" href="mailto:roberiojrdev@gmail.com">Contato</a></li>
           </ul>
         </nav>
@@ -26,20 +26,34 @@
 
     <main class="">
       <div class="introducao">
-        <div class="introducao-bg">
-          <h1 class="introducao-nome">ROBÉRIO <span> JÚNIOR </span></h1>
-          <p class="introducao-p font-2-l"> Desenvolvedor Front End </p>
+        <div class="introducao-bg ">
+          <h1 class="introducao-nome container">ROBÉRIO <span> JÚNIOR </span></h1>
+          <p class="introducao-p font-2-l container"> Desenvolvedor Front End </p>
         </div>
-        <img class="decorador" src="./img/poligonodecorador.svg" alt="decorador">
-        <img class="fotopessoal" src="./img/fotopessoal.png" alt="Fotopessoal">
+        <img class="decorador " src="./img/poligonodecorador.svg" alt="decorador">
+        <img class="fotopessoal " src="./img/fotopessoal.png" alt="Fotopessoal">
       </div>
-      <div class="introducao-icon">
+      <div class="introducao-icon container">
         <a href="https://github.com/roberiomb" target="_blank"><img src="./img/logogit.png" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/rob%C3%A9rio-j%C3%BAnior-86772b312/" target="_blank"><img src="./img/logolinkedin.svg" alt="linkedin"></a>
+        <a id="informacoes" href="https://www.linkedin.com/in/rob%C3%A9rio-j%C3%BAnior-86772b312/" target="_blank"><img src="./img/logolinkedin.svg" alt="linkedin"></a>
       </div>
     </main>
 
     <article class="informacoes-bg">
+    <img id="prev" class="setaesquerda" src="./img/iconsetaesquerda.svg" alt="setaesquerda">
+      <img id="next" class="setadireita" src="./img/iconsetadireita.svg" alt="setadireita">
+
+      <div class="slide-indicators">
+        <input type="radio" name="slide" id="indicator-1" checked>
+        <label for="indicator-1"></label>
+        <input type="radio" name="slide" id="indicator-2">
+        <label for="indicator-2"></label>
+        <input type="radio" name="slide" id="indicator-3">
+        <label for="indicator-3"></label>
+        <input type="radio" name="slide" id="indicator-4">
+        <label for="indicator-4"></label>
+      </div>
+
       <img class="informacoes-decoracao" src="./img/bolinhasopacity100.svg" alt="setaesquerda">
 
 
@@ -61,7 +75,7 @@
         <div id="slide-3" class="informações-retangulo-gostos-pessoais">
           <div class="informacoes-container">
             <h2 class="informacoes1 font-1-xxl">Gostos Pessoais</h2>
-            <span class="informacoes2 font-2-l">Fotografar a natureza é uma de minhas paixões. Há 9 anos adquiri minha primeira câmera profissional e descobri o quanto fotografar desperta minha criatividade ao me conectar com a natureza; além de me impulsionar a aprender novas técnicas e ferramentas para aprimoramento das minhas fotos. Gosto também de tocar violão, costumo dedicar 1 hora por semana para tocar com minha filha de 2 anos que ama cantar.</span>
+            <span class="informacoes2 font-2-l">Fotografar a natureza é uma de minhas paixões. Há 9 anos adquiri minha primeira câmera profissional e descobri o quanto fotografar desperta minha criatividade ao me conectar com a natureza; além de me impulsionar a aprender novas técnicas e ferramentas para aprimoramento das minhas fotos. Gosto também de tocar violão, costumo dedicar 3 hora por semana para tocar com minha filha de 2 anos que ama cantar.</span>
           </div>
         </div>
 
@@ -72,25 +86,13 @@
           </div>
         </div>
       </div>
-      <img id="prev" class="setaesquerda" src="./img/iconsetaesquerda.svg" alt="setaesquerda">
-      <img id="next" class="setadireita" src="./img/iconsetadireita.svg" alt="setadireita">
-
-      <div class="slide-indicators">
-        <input type="radio" name="slide" id="indicator-1" checked>
-        <label for="indicator-1"></label>
-        <input type="radio" name="slide" id="indicator-2">
-        <label for="indicator-2"></label>
-        <input type="radio" name="slide" id="indicator-3">
-        <label for="indicator-3"></label>
-        <input type="radio" name="slide" id="indicator-4">
-        <label for="indicator-4"></label>
-      </div>
+  
     </article>
 
     <article>
       <img class="habilidades-decoracao" src="./img/bolinhasopacity100.svg" alt="setaesquerda">
 
-      <div class="habilidades-bg">
+      <div id="habilidades"  class="habilidades-bg">
 
         <div class="habilidades-informacoes container">
 

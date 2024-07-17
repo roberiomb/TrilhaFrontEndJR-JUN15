@@ -22,14 +22,12 @@ p {
 }
 
 .introducao-nome {
-  margin-left: 13vw;
   font-size: 2.8rem;
   color: var(--cor-branco);
   font-weight: 800;
 }
 
 .introducao-p {
-  margin-left: 13vw;
   font-size: 1.5rem;
   color: hsl(0, 0%, 45%);
   text-transform: uppercase;
@@ -41,20 +39,20 @@ p {
 
 .fotopessoal {
   position: absolute;
-  margin-left: 66vw;
-  margin-top: 150px;
+  margin-left: 68vw;
+  margin-top: 250px;
   width: 300px;
 }
 
 .decorador {
-  margin-top: 150px;
-  margin-left: 64vw;
+  margin-top: 250px;
+  margin-left: 65vw;
   position: absolute;
 }
 
 .introducao-icon {
   margin-top: 15px;
-  margin-left: 13vw;
+
 }
 
 .introducao-icon a:nth-child(2) {
@@ -67,7 +65,21 @@ p {
 
 /* RESPONSIVO */
 
+
+
+@media (width <= 1200px) {
+  .decorador {
+    margin-left: 55vw;
+
+  }
+  .fotopessoal {
+    margin-left: 58vw;
+
+}
+}
+
 @media (width <= 800px) {
+
   .introducao-bg {
     margin-top: 50px;
     height: 240px;
@@ -92,7 +104,7 @@ p {
 
   .fotopessoal {
     margin-top: 120px;
-    margin-left: 5vw;
+    margin-left: 3vw;
     width: 90px;
     box-shadow: 2px 5px 5px 2px;
     border-radius: 10px;
